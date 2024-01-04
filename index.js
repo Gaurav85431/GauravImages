@@ -4,7 +4,7 @@ const http = require("http");
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
-mongoose.connect('mongodb://127.0.0.1:27017/LonexImageAPI');
+// mongoose.connect('mongodb://127.0.0.1:27017/LonexImageAPI');
 
 app.use(cors());
 
@@ -23,17 +23,17 @@ app.get('/getapi', (req, res) => {
 
 });
 
-
+/*
 app.listen(3000, function () {
   console.log("Server is ready");
 })
-
-
+*/
+// 
 ////
 
-/*
+
 const PORT = 8000;
-const DB = "mongodb+srv://Gaurav:eP2ILjAadWqdYhMda@loneximageapi.if1fgwo.mongodb.net/?retryWrites=true&w=majority";
+const DB = "mongodb+srv://pushpamgaurav3:9FJ6yfajrAWV5PzJ@gauravimages.4jz5bsb.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(DB)
   .then(() => {
@@ -47,4 +47,3 @@ mongoose.connect(DB)
     console.error("Error connecting to MongoDB:", error);
   });
 
-*/
